@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.textdetectionsample.ImageActivity"
+    android:layout_margin="30dp"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Captured image" />
+
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture Image" />
+
+    <Button
+        android:id="@+id/detectTextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detect Text" />
+
+    <TextView
+        android:id="@+id/detectedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Detected text will appear here"
+        android:textSize="16sp" />
+</LinearLayout>
